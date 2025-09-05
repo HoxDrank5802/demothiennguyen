@@ -298,3 +298,41 @@ body.nav-open::after{
 @media (min-width: 921px){
   header.glass{ box-shadow: none; }
 }
+/* === Giảm kích thước ảnh cho desktop === */
+@media (min-width: 921px) {
+  .imgourmilestones{
+    max-width: 80%;   /* cho nhỏ bớt so với container */
+    display: block;
+  }
+}
+
+/* === Lùi đoạn Club President trên mobile === */
+@media (max-width: 768px) {
+  .list .liourmilestones {
+    padding-left: 2px;   /* lùi chữ vào một chút */
+    text-indent: -10px;   /* chỉnh thụt đầu dòng gọn gàng */
+    font-size: 15px;      /* chữ không bị to quá */
+  }
+}
+
+@media (min-width: 921px) {
+  .imgourmilestones2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px 12px 0 0; /* bo góc trên thôi */
+  }
+  .glass.no-padding {
+    padding: 10px;
+    display: inline-block;   /* khung ôm vừa nội dung */
+    text-align: center;      /* căn giữa chữ dưới ảnh */
+  }
+  .liourmilestones {
+    padding: 10px 14px;       /* thêm khoảng cách nhẹ */
+    font-size: 15px;
+    line-height: 1.5;         /* giãn dòng để dễ đọc */
+    word-wrap: break-word;    /* tự xuống dòng khi dài */
+    text-align: justify;      /* căn đều chữ 2 bên cho đẹp */
+  }
+
+}
