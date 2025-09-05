@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home — ComChess For Future</title>
   <link rel="stylesheet" href="style.css">
-
   <link rel="stylesheet" href="assets/animations.css">
 </head>
 <body>
@@ -19,9 +18,15 @@
     <button class="hamburger">☰</button>
     <ul>
       <li><button onclick="window.location.href='index.html'" class="menu">Home</button></li>
-      <li><button onclick="window.location.href='our-mission.html'" class="menu">Our Mission</button></li>
+      <li><button onclick="window.location.href='aboutus.html'" class="menu">About Us</button></li>
       <li><button onclick="window.location.href='our-milestones.html'" class="menu">Our Milestones</button></li>
-      <li><button onclick="window.location.href='our-program.html'" class="menu">Our Program</button></li>
+      <li class="dropdown">
+      <button class="menu" id="programBtn">Our Program ▾</button>
+      <ul class="submenu">
+        <li><button onclick="window.location.href='program1.html'" class="menu">Program 1</button></li>
+        <li><button onclick="window.location.href='program2.html'" class="menu">Program 2</button></li>
+      </ul>
+    </li>
       <li><button onclick="window.location.href='get-involved.html'" class="menu">Get Involved</button></li>
       <li><button onclick="window.location.href='contact.html'" class="menu">Contact</button></li>
     </ul>
@@ -37,8 +42,8 @@
         <h1 class="h1">Bringing knowledge to children in remote areas</h1>
         <p class="lead">Since February 2023 in <b>Nghe An</b>, <b>ComChess for Future</b> has been dedicated to providing free access to <b>computer</b> literacy and <b>chess</b> education for underprivileged children.</p>
         <div class="cta-row" style="margin-top:16px;">
-          <a href="get-involved.html" class="btn btn-primary">Join us</a>
-          <a href="get-involved.html#donate" class="btn btn-ghost">Donate</a>
+          <a href="https://forms.gle/ALbzbM7T19YPtKxw9.html" class="btn btn-primary">Join us</a>
+          <a href="donate.html" class="btn btn-ghost">Donate</a>
           <a href="contact.html" class="btn btn-ghost">Contact</a>
         </div>
       </div>

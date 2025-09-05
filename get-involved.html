@@ -1,51 +1,56 @@
 <!doctype html><html lang="vi"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Get Involved — Highlands Learning Club</title>
+<title>Get Involved — ComChess For Future</title>
 <link rel="stylesheet" href="style.css">
 
   <link rel="stylesheet" href="assets/animations.css">
 </head><body>
 
 <header class="glass"><div class="container nav">
-  <div class="brand"><div class="name">Highlands Learning Club</div></div>
+  <div class="brand"><div class="name">ComChess For Future</div></div>
   <button class="hamburger">☰</button>
   <ul>
     <li><button onclick="window.location.href='index.html'" class="menu">Home</button></li>
-    <li><button onclick="window.location.href='our-mission.html'" class="menu">Our Mission</button></li>
+    <li><button onclick="window.location.href='aboutus.html'" class="menu">About Us</button></li>
     <li><button onclick="window.location.href='our-milestones.html'" class="menu">Our Milestones</button></li>
-    <li><button onclick="window.location.href='our-program.html'" class="menu">Our Program</button></li>
+    <li class="dropdown">
+      <button class="menu" id="programBtn">Our Program ▾</button>
+      <ul class="submenu">
+        <li><button onclick="window.location.href='program1.html'" class="menu">Program 1</button></li>
+        <li><button onclick="window.location.href='program2.html'" class="menu">Program 2</button></li>
+      </ul>
+    </li>
     <li><button onclick="window.location.href='get-involved.html'" class="menu">Get Involved</button></li>
     <li><button onclick="window.location.href='contact.html'" class="menu">Contact</button></li>
   </ul>
 </div></header>
 
-<main>
+<main style="background-color: #000033;">
 <section class="section"><div class="container">
   <div class="glass" style="padding:24px;">
-    <h1 class="section-title">Tham gia cùng chúng tôi</h1>
-    <p class="subtitle">Trở thành tình nguyện viên hoặc đóng góp cho lớp học vùng cao.</p>
+    <h1 class="h1">Get Involved</h1>
+    <p class="subtitle">At <i><b>ComChess for Future</b></i>, we believe that every child deserves access to quality education, no matter where they come from. Our mission thrives because of the dedication and passion of people like you. There are many ways you can join our journey and make a difference:</p>
 
     <div class="card-grid">
       <div class="card glass">
-        <h3>🤗 Tình nguyện viên</h3>
+        <h3>Volunteer with Us</h3>
         <ul class="list">
-          <li>Đăng ký online (giảng dạy, hậu cần, truyền thông).</li>
-          <li>Tham gia theo lịch linh hoạt.</li>
+          <li style="list-style-type: none;">Become part of our teaching team and share your knowledge of computers, chess, or soft skills. The activity schedule will be updated once new teaching sessions are planned. If you meet the requirements, you will be contacted when the project needs your support.</li>
         </ul>
-        <a class="btn btn-primary" href="#volunteer">Đăng ký ngay</a>
+        <a class="btn btn-primary" href="https://forms.gle/ALbzbM7T19YPtKxw9">Join Us</a>
       </div>
 
       <div class="card glass" id="donate">
-        <h3>🎒 Đóng góp hiện vật</h3>
+        <h3>Partner with Us</h3>
         <ul class="list">
-          <li>Sách vở, máy tính cũ, bàn ghế, vật dụng lớp học.</li>
+          <li style="list-style-type: none;">Schools, organizations, and companies are welcome to collaborate with us to expand our reach and bring even more opportunities to children in underserved communities.</li>
         </ul>
       </div>
 
       <div class="card glass">
-        <h3>💚 Đóng góp tài chính</h3>
+        <h3>Spread the Word</h3>
         <ul class="list">
-          <li>Ủng hộ một lần hoặc định kỳ cho quỹ lớp học.</li>
+          <li style="list-style-type: none;">Help us grow our community by sharing our story. With over 5,000 people already following our journey online, your voice can help inspire many more to take action.</li>
         </ul>
       </div>
     </div>
@@ -53,7 +58,7 @@
 </div></section>
 </main>
 
-<footer class="container"><div class="glass" style="padding:16px; border-radius:14px;">© 2025 Highlands Learning Club</div></footer>
+<footer class="container"><div class="glass" style="padding:16px; border-radius:14px;">© 2025 ComChess For Future</div></footer>
 <script src="script.js"></script>
 
   <script defer src="assets/reveal.js"></script>

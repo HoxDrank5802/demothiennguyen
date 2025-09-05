@@ -11,6 +11,33 @@ document.querySelectorAll('.menu').forEach(btn=>{
   if (href === here) btn.classList.add('active');
 });
 
+// ===== Toggle Our Program submenu =====
+(function(){
+  const programBtn = document.querySelector('#programBtn');
+  const dropdown = document.querySelector('.dropdown');
+
+  if (programBtn && dropdown){
+    programBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('open');
+    });
+
+    // Đóng khi click ra ngoài
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)){
+        dropdown.classList.remove('open');
+      }
+    });
+
+    // Đóng bằng ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape'){
+        dropdown.classList.remove('open');
+      }
+    });
+  }
+})();
+
 // ===== R3: Desktop offcanvas enhancements =====
 (function(){
   const header = document.querySelector('header.glass');
@@ -32,13 +59,15 @@ document.querySelectorAll('.menu').forEach(btn=>{
     document.addEventListener('click', (e) => {
       if (!navList.classList.contains('open')) return;
       if (e.target.closest('.nav')) return;
-      navList.classList.remove('open'); document.body.classList.remove('nav-open');
+      navList.classList.remove('open'); 
+      document.body.classList.remove('nav-open');
     });
 
     // Escape key closes
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape'){
-        navList.classList.remove('open'); document.body.classList.remove('nav-open');
+        navList.classList.remove('open'); 
+        document.body.classList.remove('nav-open');
       }
     });
   }
@@ -66,13 +95,15 @@ document.querySelectorAll('.menu').forEach(btn=>{
   document.addEventListener('click', (e) => {
     if (!navList.classList.contains('open')) return;
     if (e.target.closest('.nav')) return;
-    navList.classList.remove('open'); document.body.classList.remove('nav-open');
+    navList.classList.remove('open'); 
+    document.body.classList.remove('nav-open');
   });
 
   // Close on ESC
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape'){
-      navList.classList.remove('open'); document.body.classList.remove('nav-open');
+      navList.classList.remove('open'); 
+      document.body.classList.remove('nav-open');
     }
   });
 })();
